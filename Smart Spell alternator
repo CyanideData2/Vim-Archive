@@ -1,0 +1,5 @@
+setlocal spell
+set spelllang=A
+set spellfile=~/.vim/dict_A.add
+let len = 0
+nnoremap <expr> <C-i> len? ':set spelllang=B<CR>:set spellfile=~/.vim/dict_B.add<CR>:let len = 0<CR>' : ':set spelllang=A<CR>:set spellfile=~/.vim/dict_A.add<CR>:let len = 1<CR>'
