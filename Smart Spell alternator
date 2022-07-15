@@ -1,3 +1,4 @@
+#In vimrc
 setlocal spell
 set spelllang=A
 set spellfile=~/.vim/dict_A.add
