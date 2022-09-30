@@ -1,6 +1,8 @@
 #In vimrc
 setlocal spell
 set spelllang=A
-set spellfile=~/.vim/dict_A.add
+set spellfile=~/.vim/dict-A.add
 let len = 0
-nnoremap <expr> <C-i> len? ':set spelllang=B<CR>:set spellfile=~/.vim/dict_B.add<CR>:let len = 0<CR>:echo "language = A'<CR> : ':set spelllang=A<CR>:set spellfile=~/.vim/dict_A.add<CR>:let len = 1<CR>:echo "language = B"<CR>'
+let ess = 1
+noremap <expr> <C-u> len? ':set spelllang=A<CR>:set spellfile=~/.vim/dict-A.add<CR>:let len =0<CR>:let ess=1<CR>:echo "language = A"<CR>' : ':set spelllang=es<CR>:set spellfile=~/.vim/dict-B.add<CR>:let len =1<CR>:let ess=1<CR>:echo "lenguage = B"<CR>'
+noremap <expr> <C-e> ess? ':set spelllang=C<CR>:set spellfile=~/.vim/dict-C.add<CR>:let ess =0<CR>:let len = 1<CR>:echo "language = C"<CR>' : ':set spelllang=es<CR>:set spellfile=~/.vim/dict-B.add<CR>:let ess =1<CR>:let len = 1<CR>:echo "language = B"<CR>'
